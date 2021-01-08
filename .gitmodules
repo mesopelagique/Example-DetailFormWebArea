@@ -1,0 +1,3 @@
+[submodule "Resources/mobile/form/detail/WebArea"]
+	path = Resources/mobile/form/detail/WebArea
+	url = https://github.com/mesopelagique/form-detail-WebArea.git

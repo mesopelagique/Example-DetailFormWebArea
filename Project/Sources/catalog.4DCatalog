@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Example-DetailFormWebArea" uuid="D843F1580D4142A18650723DD18F0985" collation_locale="en-gb">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Article" uuid="1ABFB8D9A2A74ECC8894CEDFA0557E4C" id="1">
+		<field name="ID" uuid="AC0212BCAC934687B8982A5FEF4FBB48" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="791009950F2C4D06B70727B04029E9ED" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="url" uuid="32E0457AE6DD46B4A37863A71ECB750C" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="__GlobalStamp" uuid="8F4985B7DD7440D2A3AADEA5225FC085" type="5" id="4"/>
+		<primary_key field_name="ID" field_uuid="AC0212BCAC934687B8982A5FEF4FBB48"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40.8125" top="38.76953125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="__DeletedRecords" uuid="029B6DECEA694499AB23340FEFB60EDA" id="2" leave_tag_on_delete="true" prevent_journaling="true">
+		<field name="ID" uuid="81B4E093F0D745B3A46B18E0516AED57" type="5" unique="true" autosequence="true" id="1"/>
+		<field name="__Stamp" uuid="72776CD025474A15B1423CBBD10F31FD" type="5" id="2"/>
+		<field name="__TableNumber" uuid="BE8CD61F81FF4D3C9FBE973A117731F3" type="4" id="3"/>
+		<field name="__TableName" uuid="62E66098FD8E4FB3A4AFD327EE98C4A4" type="10" limiting_length="255" id="4"/>
+		<field name="__PrimaryKey" uuid="270B1C3E86764AF1B30847BCEB7A9A79" type="10" limiting_length="255" id="5"/>
+		<primary_key field_name="ID" field_uuid="81B4E093F0D745B3A46B18E0516AED57"/>
+	</table>
+	<index kind="regular" unique_keys="true" name="__DeletedRecordsID" uuid="6142079A03E347A9B99F9A13604848EA" type="7">
+		<field_ref uuid="81B4E093F0D745B3A46B18E0516AED57" name="ID">
+			<table_ref uuid="029B6DECEA694499AB23340FEFB60EDA" name="__DeletedRecords"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="759A286D3F3B40138965AE40EDFDCB58" type="7">
+		<field_ref uuid="AC0212BCAC934687B8982A5FEF4FBB48" name="ID">
+			<table_ref uuid="1ABFB8D9A2A74ECC8894CEDFA0557E4C" name="Article"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="__DeletedRecords__Stamp" uuid="8B41EB687AA24826A83CAA3D4F4934AF" type="7">
+		<field_ref uuid="72776CD025474A15B1423CBBD10F31FD" name="__Stamp">
+			<table_ref uuid="029B6DECEA694499AB23340FEFB60EDA" name="__DeletedRecords"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="__GlobalStamp_article" uuid="DD573722C1D84500810E110C8C6C9FDF" type="7">
+		<field_ref uuid="8F4985B7DD7440D2A3AADEA5225FC085" name="__GlobalStamp">
+			<table_ref uuid="1ABFB8D9A2A74ECC8894CEDFA0557E4C" name="Article"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
