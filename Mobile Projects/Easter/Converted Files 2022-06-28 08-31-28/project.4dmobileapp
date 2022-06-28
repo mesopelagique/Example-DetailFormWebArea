@@ -1,10 +1,10 @@
-{
+﻿{
 	"info": {
-		"version": 7,
+		"version": 5,
 		"target": "iOS",
-		"ideVersion": "1960",
-		"ideBuildVersion": "280245",
-		"componentBuild": ""
+		"ideVersion": "1870",
+		"ideBuildVersion": "260139",
+		"componentBuild": "616"
 	},
 	"product": {
 		"name": "My App",
@@ -40,8 +40,7 @@
 		"doNotExportImages": false
 	},
 	"ui": {
-		"navigationTransition": "PresentSlideSegue",
-		"dominantColor": "rgb(45,117,194)"
+		"navigationTransition": "PresentSlideSegue"
 	},
 	"dataModel": {
 		"1": {
@@ -60,9 +59,7 @@
 				"fieldType": 0,
 				"type": 10,
 				"id": 2,
-				"kind": "storage",
-				"fieldNumber": 2,
-				"icon": "actions 2/Travel-plane.svg"
+				"kind": "storage"
 			},
 			"3": {
 				"name": "url",
@@ -71,9 +68,7 @@
 				"fieldType": 0,
 				"type": 10,
 				"id": 3,
-				"kind": "storage",
-				"fieldNumber": 3,
-				"icon": "actions 2/Selected Order.svg"
+				"kind": "storage"
 			}
 		}
 	},
@@ -82,10 +77,12 @@
 			"fields": [
 				{
 					"name": "name",
+					"label": "Name",
+					"shortLabel": "Name",
 					"fieldType": 0,
-					"kind": "storage",
+					"type": 10,
+					"id": 2,
 					"fieldNumber": 2,
-					"icon": "actions 2/Travel-plane.svg",
 					"path": "name"
 				},
 				null,
@@ -101,7 +98,6 @@
 					"fieldType": 0,
 					"type": 10,
 					"id": 2,
-					"kind": "storage",
 					"fieldNumber": 2,
 					"path": "name"
 				},
@@ -111,7 +107,6 @@
 					"shortLabel": "Url",
 					"fieldType": 0,
 					"type": 10,
-					"kind": "storage",
 					"id": 3,
 					"fieldNumber": 3,
 					"path": "url"
@@ -126,12 +121,15 @@
 			"fields": [
 				{
 					"name": "url",
+					"label": "Url",
+					"shortLabel": "Url",
 					"fieldType": 0,
-					"kind": "storage",
+					"type": 10,
+					"id": 3,
 					"fieldNumber": 3,
-					"icon": "actions 2/Selected Order.svg",
 					"path": "url"
-				}
+				},
+				null
 			]
 		}
 	},
